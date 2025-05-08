@@ -1,5 +1,4 @@
-# 🤖 LiveKit AI Car Call Centre
-# AI Car Service Center Voice Assistant
+# 🤖 AI Car Service Center Voice Assistant
 
 ## Overview
 
@@ -36,8 +35,6 @@ This project implements an AI-powered voice assistant tailored for a car service
 
 ---
 
-## 🚀 How to Run
-
 ### Architecture Diagram
 
 ```
@@ -60,6 +57,7 @@ User <--> Frontend (React + LiveKit Components)
 
 ---
 
+
 ## 🧠Setup Instructions
 
 ### 1. Clone the Repository
@@ -78,13 +76,15 @@ source ai/Scripts/activate  # Windows
 source ai/bin/activate     # macOS/Linux
 ```
 
-### 3. Install Backend Dependencies
+## 🚀 How to Run
+
+### 1. Install Backend Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Setup Environment Variables
+### 2. Setup Environment Variables
 
 Create a `.env` file:
 
@@ -94,20 +94,20 @@ LIVEKIT_API_KEY=your_api_key
 LIVEKIT_API_SECRET=your_api_secret
 OPENAI_API_KEY=your_openai_api_key
 ```
-### 5. Start FastAPI Token Server
+### 3. Start FastAPI Token Server
 
 ```
 python -m uvicorn server:app --reload --port=5001
 ```
 
-### 6. Run Backend Agent
+### 4. Run Backend Agent
 
 ```bash
 cd backend
 python agent.py dev
 ```
 
-### 7. Run Frontend (React)
+### 5. Run Frontend (React)
 
 ```bash
 cd frontend
